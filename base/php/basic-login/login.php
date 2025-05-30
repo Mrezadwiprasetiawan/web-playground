@@ -13,13 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // change these to your admin credentials
     if (($user === $admin_alias || $user === $admin_name) && $pass === $admin_pass) {
-        $_SESSION['logged_in'] = true;
+        $_SESSION['logged'] = true;
         header('Location: index.php');
         $error = '';
         exit;
     } else {
         $error = 'Username or password is incorrect.';
-        $_SESSION['logged_in'] = false;
+        $_SESSION['logged'] = false;
     }
 }
 ?>
