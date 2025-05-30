@@ -27,16 +27,16 @@ li:focus {
   outline: 2px solid #007bff;
 }
 
-#red    { background-color: #ff0000; color: #fff; }
-#green  { background-color: #00ff00; color: #fff; }
-#blue   { background-color: #0000ff; color: #fff; }
-#yellow { background-color: #ffff00; color: #000; }
-#cyan   { background-color: #00ffff; color: #000; }
-#magenta{ background-color: #ff00ff; color: #000; }
-#black  { background-color: #000000; color: #fff; }
-#white  { background-color: #ffffff; color: #000; }
-#gray   { background-color: #808080; color: #fff; }
-#orange { background-color: #ffa500; color: #fff; }
-#purple { background-color: #800080; color: #fff; }
-#pink   { background-color: #ffc0cb; color: #000; }
-#brown  { background-color: #a52a2a; color: #fff; }
+#red    { background-color: red; color: white; }
+#green  { background-color: green; color: white; }
+#blue   { background-color: blue; color: white; }
+#yellow { background-color: yellow; color: black; }
+#cyan   { background-color: cyan; color: black; }
+#magenta{ background-color: magenta; color: black; }
+#black  { background-color: black; color: white; }
+#white  { background-color: white; color: black; }
+#gray   { background-color: gray; color: white; }
+#orange { background-color: orange; color: white; }
+#purple { background-color: purple; color: white; }
+#pink   { background-color: pink; color: black; }
+#brown  { background-color: brown; color: white; }
