@@ -1,0 +1,15 @@
+header{
+  background-color: #4CAF50; /* Green */
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+footer{
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
