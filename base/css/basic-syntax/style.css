@@ -1,0 +1,17 @@
+/* the syntax is simple and easy to read just selectors and the block of declarations like => selectors { property: value; }
+*/
+
+body {
+  background-color: #a1c4e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.selectors {
+  color: #d63384;
+}
+
+#selectors {
+  color: #007bff;
+}

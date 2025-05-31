@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8'>
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Structure - Map and Area</title>
+</head>
+
+<body>
+  <h1>Basic HTML Structure - Map and Area</h1>
+
+  <!--The <map> HTML element is used with <area> elements to define an image map (a clickable link area).-->
+
+  <!--The name attribute gives the map a name so that it can be referenced. The attribute must be present and must have a non-empty value
+  with no space characters. The value of the name attribute must not be equal to the value of the name attribute of another <map> element
+    in the same document. If the id attribute is also specified, both attributes must have the same value.-->
+
+  <h2> This is an example from the mozilla developer</h2>
+  <map name="infographic">
+
+    <!--The <area> HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric
+    areas on an image to be associated with hypertext links.-->
+
+    <!--This element's attributes include the global attributes.
+    alt 
+      A text string alternative to display on browsers that do not display images. The text should be phrased so that it presents the
+      user with the same kind of choice as the image would offer when displayed without the alternative text. This attribute is required
+      only if the href attribute is used.
+    
+    coords
+      The coords attribute details the coordinates of the shape attribute in size, shape, and placement of an <area>. This attribute must
+      not be used if shape is set to default.
+        
+      rect: the value is x1,y1,x2,y2.
+        The value specifies the coordinates of the top-left and bottom-right corner of the rectangle.
+        For example, in <area shape="rect" coords="0,0,253,27" href="#" target="_blank" alt="Mozilla"> the coordinates are 0,0 and 253,27,
+        indicating the top-left and bottom-right corners of the rectangle, respectively.
+      circle: the value is x,y,radius.
+        Value specifies the coordinates of the circle center and the radius. For example: <area shape="circle" coords="130,136,60" href="#"
+        target="_blank" alt="MDN">
+      poly: the value is x1,y1,x2,y2,..,xn,yn.
+        Value specifies the coordinates of the edges of the polygon. If the first and last coordinate pairs are not the same, the browser
+        will add the last coordinate pair to close the polygon The values are numbers of CSS pixels.
+
+    download
+      This attribute, if present, indicates that the linked resource is intended to be downloaded rather than displayed in the browser. See <a> for a full description of the download attribute.
+
+    href
+      The hyperlink target for the area. Its value is a valid URL. This attribute may be omitted; if so, the <area> element does not represent a hyperlink.
+
+    ping
+      Contains a space-separated list of URLs to which, when the hyperlink is followed, POST requests with the body PING will be sent by the browser (in the background). Typically used for tracking.
+
+    referrerpolicy
+      A string indicating which referrer to use when fetching the resource:
+
+        no-referrer: The Referer header will not be sent.
+        no-referrer-when-downgrade: The Referer header will not be sent to origins without TLS (HTTPS).
+        origin: The sent referrer will be limited to the origin of the referring page: its scheme, host, and port.
+        origin-when-cross-origin: The referrer sent to other origins will be limited to the scheme, the host, and the port. Navigations on the same origin will still include the path.
+        same-origin: A referrer will be sent for same origin, but cross-origin requests will contain no referrer information.
+        strict-origin: Only send the origin of the document as the referrer when the protocol security level stays the same (HTTPS→HTTPS), but don't send it to a less secure destination (HTTPS→HTTP).
+        strict-origin-when-cross-origin (default): Send a full URL when performing a same-origin request, only send the origin when the protocol security level stays the same (HTTPS→HTTPS), and send no header to a less secure destination (HTTPS→HTTP).
+        unsafe-url: The referrer will include the origin and the path (but not the fragment, password, or username). This value is unsafe, because it leaks origins and paths from TLS-protected resources to insecure origins.
+    rel
+      For anchors containing the href attribute, this attribute specifies the relationship of the target object to the link object. The value is a space-separated list of link types. The values and their semantics will be registered by some authority that might have meaning to the document author. The default relationship, if no other is given, is void. Use this attribute only if the href attribute is present.
+
+    shape
+      The shape of the associated hot spot. The specifications for HTML defines the values rect, which defines a rectangular region; circle, which defines a circular region; poly, which defines a polygon; and default, which indicates the entire region beyond any defined shapes.
+
+    target
+      A keyword or author-defined name of the browsing context to display the linked resource. The following keywords have special meanings:
+
+        _self (default): Show the resource in the current browsing context.
+        _blank: Show the resource in a new, unnamed browsing context.
+        _parent: Show the resource in the parent browsing context of the current one, if the current page is inside a frame. If there is no parent, acts the same as _self.
+        _top: Show the resource in the topmost browsing context (the browsing context that is an ancestor of the current one and has no parent). If there is no parent, acts the same as _self.
+        Use this attribute only if the href attribute is present.-->
+    <area shape="poly" coords="130,147,200,107,254,219,130,228" href="https://developer.mozilla.org/docs/Web/HTML"
+      alt="HTML" />
+    <area shape="poly" coords="130,147,130,228,6,219,59,107" href="https://developer.mozilla.org/docs/Web/CSS"
+      alt="CSS" />
+    <area shape="poly" coords="130,147,200,107,130,4,59,107" href="https://developer.mozilla.org/docs/Web/JavaScript"
+      alt="JavaScript" />
+  </map>
+  <img src="https://mdn.mozillademos.org/files/5401/mdn-info.png" usemap="#infographic" alt="MDN infographic">
+
+  <h2>Example 2</h2>
+  <!-- Photo by Juliana e Mariana Amorim on Unsplash -->
+  <map name="primary">
+    <area shape="circle" coords="75,75,75" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank"
+      alt="JavaScript" />
+    <area shape="circle" coords="275,75,75" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank"
+      alt="CSS" />
+  </map>
+  <img src="https://mdn.mozillademos.org/files/5401/mdn-info.png" usemap="#primary" alt="primary">
+
+</html>
