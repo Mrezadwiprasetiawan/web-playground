@@ -1,0 +1,22 @@
+.styled-div {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(180deg, #fff, #7887c7 40%, #3476b3);
+}
+
+.container-list {
+  display: flex;
+  align-items: strecth;
+  gap: 10px;
+}
+
+.container-list>div {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100px;
+}

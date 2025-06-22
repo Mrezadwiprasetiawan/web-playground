@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #19191a;
+  --secondary-color: #28262e;
+  --tertiary-color: rgba(20, 20, 25, 0.85);
+  --text-color: #fdfbfb;
+  --link-color: rgb(0, 60, 255);
+  --active-color: #373839;
+  --elevation-small: 0 2px 4px;
+  --elevation-large: 0 8px 16px;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --light-color: #fdfbfb;
+  --footer-color: #000000;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.login-container {
+  background: var(--secondary-color);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(text);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: white;
+  color: var(black);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:valid {
+  background: var(--tertiary-color);
+  color: var(--text-color);
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px var(--tertiary-color) inset !important;
+  -webkit-text-fill-color: var(--text-color);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: var(--tertiary-color);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.blog-link {
+  margin-top: 20px;
+}
+
+.blog-link a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+}
