@@ -1,16 +1,5 @@
-:root {
-  --primary-color: #19191a;
-  --secondary-color: #28262e;
-  --tertiary-color: rgba(20, 20, 25, 0.85);
-  --text-color: #fdfbfb;
-  --link-color: rgb(0, 60, 255);
-  --active-color: #373839;
-  --elevation-small: 0 2px 4px;
-  --elevation-large: 0 8px 16px;
-  --shadow: rgba(0, 0, 0, 0.5);
-  --light-color: #fdfbfb;
-  --footer-color: #000000;
-}
+@import url(theme/light.css);
+@import url(theme/dark.css);
 
 * {
   margin: 0;
@@ -39,26 +28,33 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 15vh;
+  height: auto;
   background: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: start;
-  flex-direction: column;
-  border-radius: 8px;
   color: var(--text-color);
   padding: 1rem 2rem;
   box-shadow: var(--elevation-large) var(--shadow);
 }
 
-.tabs {
+header>h1 {
+  font-size: 22px;
+  flex: 1 1 auto;
+}
+
+.nav {
   margin: var(--elevation-large);
   flex: 1 1 auto;
   display: flex;
   position: relative;
 }
 
-.tabs>button {
+.nav>* {
+  flex: 1 1 auto;
+}
+
+.nav>button {
   border: none;
   box-sizing: border-box;
   border-bottom: 1px solid var(--primary-color);
@@ -69,22 +65,33 @@ header {
   box-shadow: var(--elevation-small) var(--shadow);
   margin-left: 2px;
   margin-right: 2px;
+  max-height: 5ch;
   padding: 4px;
   cursor: pointer;
   color: var(--text-color);
   font-size: 1rem;
 }
 
-.tabs>button>.label>a {
+.nav>select {
+  background: var(--tertiary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+  min-width: 5ch;
+  max-width: 5ch;
+  border: none;
+}
+
+.nav>.tab>.label>a {
   color: var(--text-color);
   font-weight: bold;
 }
 
-.tabs button:hover {
+.nav>.tab:hover {
   filter: brightness(1.2);
 }
 
-.tabs .bar {
+.nav .bar {
   left: 0;
   width: 0;
   position: absolute;
@@ -94,12 +101,13 @@ header {
   transition: transform .2s ease, width .2s ease;
 }
 
-.tabs>.logout {
+.nav>.logout {
   background: red;
   align-self: end;
+  flex: 1 1 auto;
 }
 
-.tabs>.logout>.label>a {
+.nav>.logout>.label>a {
   text-decoration: none;
   color: var(--text-color);
 }

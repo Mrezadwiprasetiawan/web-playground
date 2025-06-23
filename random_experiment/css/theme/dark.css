@@ -1,0 +1,16 @@
+:root:has(#theme option[value="dark"]:checked) {
+  --primary-color: #19191a;
+  --secondary-color: #28262e;
+  --tertiary-color: rgba(20, 20, 25, 0.85);
+  --text-color: #fdfbfb;
+  --link-color: rgb(0, 60, 255);
+  --active-color: #373839;
+  --elevation-small: 0 2px 4px;
+  --elevation-large: 0 8px 16px;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --light-color: #fdfbfb;
+  --footer-color: #000000;
+  --button-color: #3399ff;
+  --button-text-color: #000000;
+  --button-hover: #66b3ff;
+}

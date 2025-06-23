@@ -1,1 +1,4 @@
 .vscode
+.prettierrc
+package-lock.json
+package.json
