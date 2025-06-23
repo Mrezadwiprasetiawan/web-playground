@@ -1,11 +1,11 @@
 <?php
-    session_start();
+  session_start();
 
-    if (! isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
-        header('Location: login.php');
-        // Redirect to login page if not logged in
-        exit;
-    }
+  if (! isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header('Location: login.php');
+    // Redirect to login page if not logged in
+    exit;
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,22 +21,25 @@
     <h1>M Reza dwi prasetiawan</h1>
     <nav class="nav" role="tablist">
       <!--fetch api-->
-      <button data-tab="home" class="tab active" aria-selected="true"><span class="label">Beranda</span></button>
+      <button data-tab="home" class="tab tabActive" aria-selected="true"><span class="label">Beranda</span></button>
       <button data-tab="about" class="tab"><span class="label">Tentang</span></button>
       <button data-tab="tos" class="tab"><span class="label">Persyaratan layanan</span></button>
       <span class="bar"></span>
       <select id="theme" aria-label="theme selector">
-        <option value="dark">&#127769;</option>
         <option value="light" selected>&#9728;</</option>
+        <option value="dark">&#127769;</option>
+
       </select>
       <button class="logout" ><span class="label"><a href="logout.php">Logout</a></span></button>
      </nav>
   </header>
-  <div class="container" role="tabpanel">
+  <div id="mainContainer" class="container" role="tabpanel">
     <aside>
       <!-- fetch api -->
     </aside>
-    <main id="panel" role="tabpanel" aria-live="polite"> <!-- fetch api--></main>
+    <main id="panel" role="tabpanel" aria-live="polite">
+      <!-- fetch api-->
+    </main>
   </div>
   <footer>&copy 2025 M Reza Dwi Prasetiawan</footer>
   <script src="app.js"></script>

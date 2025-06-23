@@ -17,7 +17,6 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--primary-color);
   color: var(--text-color);
-  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -61,7 +60,6 @@ header>h1 {
   display: block;
   border-radius: 4px;
   background: var(--secondary-color);
-  flex: 1 1 auto;
   box-shadow: var(--elevation-small) var(--shadow);
   margin-left: 2px;
   margin-right: 2px;
@@ -77,12 +75,12 @@ header>h1 {
 }
 
 .nav>select {
+  flex: 0 0 auto;
   background: var(--tertiary-color);
   color: var(--text-color);
   border-radius: 8px;
+  width: 5ch;
   aspect-ratio: 1/1;
-  min-width: 5ch;
-  max-width: 5ch;
   border: none;
 }
 
@@ -91,28 +89,37 @@ header>h1 {
   font-weight: bold;
 }
 
-
-
 .nav .bar {
   left: 0;
   width: 0;
   position: absolute;
   bottom: 0;
-  height: 3px;
-  background: var(--link-color);
+  height: 2px;
+  background: var(--bar-color);
   transition: transform .2s ease, width .2s ease;
 }
 
 .nav>.logout {
-  background: red;
-  align-self: end;
-  flex: 1 1 auto;
+  display: block;
+  border-radius: 4px;
+  background: var(--danger-color);
+  transform: translate(0px, 0px);
+  transition: transform 200ms ease;
 }
 
 .nav>.logout>.label>a {
   text-decoration: none;
-  color: var(--text-colorr);
+  color: var(--text-color);
 }
+
+.nav>.logout:active {
+  transform: translate(1px, 1px);
+}
+
+.nav>.logout:hover {
+  background: var(--danger-hover);
+}
+
 
 ul {
   list-style: none;
@@ -120,8 +127,6 @@ ul {
 }
 
 .container {
-  margin-top: 120px;
-  margin-bottom: 60px;
   display: flex;
   min-height: 80vh;
   padding: 1rem 1rem;
@@ -133,6 +138,11 @@ ul {
   background: var(--secondary-color);
   padding: 1rem;
   box-shadow: var(--elevation-small) var(--shadow);
+}
+
+.container>aside {
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .container>main {

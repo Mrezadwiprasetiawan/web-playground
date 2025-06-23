@@ -2,8 +2,8 @@
   --primary-color: hsl(0, 0%, 76%);
   --secondary-color: #ffffff;
   --tertiary-color: #c2f8ffd8;
+  --bar-color: #003cff;
   --text-color: #1a1a1a;
-  --link-color: #003cff;
   --active-color: #cfcfd6;
   --elevation-small: 0 2px 4px;
   --elevation-large: 0 8px 16px;
@@ -14,4 +14,8 @@
   --button-hover: #0056cc;
   --footer-color: hsl(231, 59%, 19%);
   --footer-text-color: #ffffff;
+  --danger-color: red;
+  --danger-hover: #ff4d4d;
+  --danger-text-color: #000000;
+  --success-color: #28a745;
 }

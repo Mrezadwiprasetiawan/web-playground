@@ -2,16 +2,20 @@
   --primary-color: #19191a;
   --secondary-color: #28262e;
   --tertiary-color: rgba(20, 20, 25, 0.85);
+  --bar-color: rgb(0, 60, 255);
   --text-color: #fdfbfb;
-  --link-color: rgb(0, 60, 255);
   --active-color: #373839;
   --elevation-small: 0 2px 4px;
   --elevation-large: 0 8px 16px;
-  --shadow: rgba(0, 0, 0, 0.5);
+  --shadow-color: rgba(0, 0, 0, 0.5);
   --light-color: #fdfbfb;
   --button-color: #3399ff;
   --button-text-color: #000000;
   --button-hover: #66b3ff;
   --footer-color: #000000;
   --footer-text-color: #ffffff;
+  --danger-color: #ff000d;
+  --danger-hover: #ff4d4d;
+  --danger-text-color: #ffffff;
+  --success-color: #4caf50;
 }
