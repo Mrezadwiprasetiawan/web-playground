@@ -54,13 +54,13 @@ header>h1 {
   flex: 1 1 auto;
 }
 
-.nav>button {
+.nav>.tab {
   border: none;
   box-sizing: border-box;
   border-bottom: 1px solid var(--primary-color);
   display: block;
   border-radius: 4px;
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   flex: 1 1 auto;
   box-shadow: var(--elevation-small) var(--shadow);
   margin-left: 2px;
@@ -70,6 +70,10 @@ header>h1 {
   cursor: pointer;
   color: var(--text-color);
   font-size: 1rem;
+}
+
+.nav>.tab:hover {
+  background: var(--tertiary-color);
 }
 
 .nav>select {
@@ -87,9 +91,7 @@ header>h1 {
   font-weight: bold;
 }
 
-.nav>.tab:hover {
-  filter: brightness(1.2);
-}
+
 
 .nav .bar {
   left: 0;
@@ -109,7 +111,7 @@ header>h1 {
 
 .nav>.logout>.label>a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-colorr);
 }
 
 ul {
@@ -143,6 +145,7 @@ footer {
   min-width: 100%;
   bottom: 0;
   background: var(--footer-color);
+  color: var(--footer-text-color);
   text-align: center;
   padding: 1rem;
   font-size: 1rem;

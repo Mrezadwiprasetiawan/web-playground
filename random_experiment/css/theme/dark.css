@@ -9,8 +9,9 @@
   --elevation-large: 0 8px 16px;
   --shadow: rgba(0, 0, 0, 0.5);
   --light-color: #fdfbfb;
-  --footer-color: #000000;
   --button-color: #3399ff;
   --button-text-color: #000000;
   --button-hover: #66b3ff;
+  --footer-color: #000000;
+  --footer-text-color: #ffffff;
 }
